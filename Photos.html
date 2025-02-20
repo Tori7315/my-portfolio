@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Photo Gallery</title>
+	<style>
+		/* page Styling */
+		body{
+			background-color: #1a1a1a;
+			color: white;
+			font-family: Arial, san-serif;
+			text-align: center;
+			padding:20px;
+		}
+		
+		h1{
+			text-shadow: 2px 2px 5px #7a3cff;
+		}
+		/* Photo Grid */
+		.Gallery{
+			display: grid;
+			grid-template-columns: repeat(auto--fit, minmax(300px, 1fr)); /* Responsive grid */
+			gap: 20px;
+			padding: 20px;
+		}
+		
+		.gallery img {
+            width: 80%;
+			max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05); /* Enlarge image slightly on hover */
+        }
+
+        /* Back Button */
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #7a3cff;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #ab84ff;
+        }
+    </style>		
+</head>
+<body>
+<h1>Photo Gallery</h1>
+
+    <div class="gallery">
+        <img src="photo1.jpg" alt="Game Screenshot 1">
+        <img src="photo2.jpg" alt="Game Screenshot 2">
+        <img src="photo3.jpg" alt="Game Screenshot 3">
+        <img src="photo4.jpg" alt="Game Screenshot 4">
+    </div>
+
+    <a href="Changes.html" class="back-button">← Back to Portfolio</a>
+</body>
+</html>

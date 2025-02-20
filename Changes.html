@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Welcome To My Portfolio</title>
+    
+    <style>
+        /* Importing a retro game-inspired font from Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        /* Global styles for the entire page */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Press Start 2P', cursive; /* Using a gaming-inspired font */
+            background-color: #1a1a1a; /* Dark background for a sleek gaming aesthetic */
+            color: #ffffff; /* White text for better contrast */
+        }
+
+        /* Header section */
+        .header {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(90deg, #065143, #70B77E); /* Gradient effect for a stylish look */
+            border-bottom: 5px solid #007A76;
+            width: 100%;
+        }
+
+        .header h1 {
+            font-size: 50px;
+            text-shadow: 4px 4px #000;
+            letter-spacing: 3px;
+        }
+
+        /* Container for About Me & Buttons section */
+        .content-container {
+            display: flex;
+            width: 100%;
+            height: calc(100vh - 150px);
+            padding: 20px;
+            gap: 20px; /* Adds space between sections */
+        }
+
+        /* Left Section: About Me */
+        .about-me {
+            width: 30%;
+            padding: 20px;
+            background-color: rgba(0, 122, 118, 0.9); /* Slightly transparent teal background */
+            border-radius: 10px;
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+            overflow: auto;
+        }
+
+        .about-me h2 {
+            border-bottom: 3px solid #ffffff;
+            padding-bottom: 5px;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        /* Right Section: Background & Buttons */
+        .right-side {
+            flex-grow: 1;
+            background: url('https://www.chetu.com/img/blogs/game-development-trends/game-development-trends-banner.jpg') 
+                        no-repeat center center;
+            background-size: cover;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start; /* Aligns buttons to the left */
+            padding: 50px;
+        }
+
+        /* Button Styling */
+        .button {
+            display: block;
+            padding: 15px;
+            width: 250px;
+            background: linear-gradient(45deg, #7a3cff, #ab84ff);
+            color: #fff;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+            margin: 10px 0;
+            margin-left: 50px; /* Moves buttons to the left */
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .button:hover {
+            background: #ffffff;
+            color: #7a3cff;
+            transform: scale(1.05);
+        }
+
+        /* Responsive Design for Mobile */
+        @media (max-width: 900px) {
+            .content-container {
+                flex-direction: column; /* Stacks sections vertically */
+                align-items: center;
+                height: auto;
+            }
+
+            .about-me {
+                width: 90%;
+            }
+
+            .right-side {
+                width: 90%;
+                align-items: center; /* Centers buttons on mobile */
+            }
+
+            .button {
+                margin-left: 0; /* Centers buttons on mobile */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Welcome To My Portfolio</h1>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="content-container">
+        
+        <!-- "About Me" Section -->
+        <div class="about-me">
+            <h2>About Me:</h2>
+            <p>My name is Toriana Lewis.</p>
+            <p>I am a college graduate with a Bachelor's degree in Computer Science with a concentration in game development and a Minor in Animation.</p>
+            <p>I am passionate about game development, seeking opportunities to contribute to innovative gaming projects while building on my programming expertise.</p>
+        </div>
+
+        <!-- Right Side: Buttons Section -->
+        <div class="right-side">
+            <a class="button" href="photos.html">Photos!</a>
+            <a class="button" href="Videos.html">Videos!</a>
+            <a class="button" href="#">More about me!</a>
+            <a class="button" href="resume.pdf" target="_blank">Resume!</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

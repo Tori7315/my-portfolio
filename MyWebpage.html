@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Welcome To My Portfolio</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: fantasy;
+        }
+
+        /* Header Styling */
+        .header {
+            text-align: center;
+            padding: 50px;
+            color: #ffffff;
+            background-color: #70B77E;
+            border-bottom: 5px solid #065143;
+            box-sizing: border-box;
+            width: 100%; /* Full width for header */
+        }
+
+        .header h1 {
+            color: #ffffff; /* White text */
+            padding: 10px; /* Add some space around the text */
+            text-shadow:
+                3px 3px 0px #065143,
+                -3px -3px 0px #065143,
+                3px -3px 0px #065143,
+                -3px 3px 0px #065143;
+            letter-spacing: 3px;
+            font-size: 60px;
+        }
+
+        /* Container for the left side and right side */
+        .content-container {
+            display: flex; /* Flexbox layout */
+            width: 100%;
+            height: calc(100vh - 150px); /* Takes the remaining height after the header */
+        }
+
+        /* Left Section: About Me */
+        .about-me {
+            width: 400px;
+            padding: 20px;
+            color: #007A76;
+            background-color: #9CEBE8;
+            border: 5px solid #007A76;
+            box-sizing: border-box;
+            font-size: 30px;
+            font-family: Times, "Times New Roman", Georgia, serif;
+            margin-top: 0px; /* Add margin to position below header */
+			height: 100%;
+			overflow:auto;
+        }
+
+        .about-me h2 {
+            margin-top: 0;
+            border-bottom: 5px solid #007A76; /* Adds a solid line under "About Me:" */
+            padding-bottom: 2px; /* Adds some space between the text and the line */
+        }
+
+        /* Right Section: Background Image */
+        .right-side {
+            flex-grow: 1; /* Takes up remaining space */
+            background-image: url('https://www.chetu.com/img/blogs/game-development-trends/game-development-trends-banner.jpg'); /* Replace with your image URL */
+            background-size: cover; /* Makes the image cover the whole space */
+            background-position: center; /* Centers the background image */
+            height: 100%; /* Ensures full height */
+			
+        }
+		
+		.button{
+           display: block;
+           padding: 15px; 
+           width: 300px; 
+           background-color: #ab84ff;
+           color: #fff;
+           font-size: 18px;
+           text-align: center;
+           text-decoration: none;
+           border: 5px solid #ab84ff ;
+           border-radius: 5px;
+           cursor: pointer;
+		   position: center;
+		   margin-top: 50px;
+		   margin-left: 110px;
+        }
+
+        .button:hover{
+            background-color: #ffe6e6;
+            color: #7a3cff;
+        }
+		
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Welcome To My Portfolio</h1>
+    </div>
+
+    <div class="content-container">
+        <!-- Box for "About Me" section -->
+        <div class="about-me">
+            <h2>About Me:</h2>
+            <p>My name is Toriana Lewis.</p>
+            <p>I am a college graduate with a Bachelor's degree in Computer Science with a concentration in game development and a Minor in Animation.</p>
+            <p>I am passionate about game development, seeking opportunities to contribute to innovative gaming projects while building on my programming expertise.</p>
+        </div>
+
+        <!-- Right side with background image -->
+        <div class="right-side">
+			<a class="button">Photos!</a>
+			<a class="button" href=https://www.youtube.com/@Toriana_GameDev>Videos!</a>
+			<a class="button">More about me!</a>
+			<a class="button">Resume!</a>
+			
+			
+		</div>
+    </div>
+	   
+
+</body>
+</html>

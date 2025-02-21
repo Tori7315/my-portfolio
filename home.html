@@ -102,7 +102,7 @@
             transform: scale(1.05);
         }
 
-        /* Responsive Design for Mobile */
+        /* Responsive Design for Mobile and Tablets */
         @media (max-width: 900px) {
             .content-container {
                 flex-direction: column; /* Stacks sections vertically */
@@ -120,15 +120,44 @@
             }
 
             .button {
-                width: auto;  /* Makes buttons adjust to their content */
-                max-width: 250px;  /* Adds a max-width to prevent stretching */
+                width: 250px;  /* Keeps buttons at a reasonable size */
                 margin-left: 0; /* Centers buttons */
                 font-size: 14px; /* Smaller font size on mobile */
                 padding: 12px;  /* Slightly smaller padding */
+                max-width: 90%; /* Prevents buttons from stretching too much */
             }
 
             .header h1 {
                 font-size: 30px; /* Smaller header on mobile */
+            }
+        }
+
+        /* For very small mobile screens (below 600px) */
+        @media (max-width: 600px) {
+            .content-container {
+                flex-direction: column; /* Stacks sections vertically */
+                align-items: center;
+                height: auto;
+            }
+
+            .about-me {
+                width: 90%;
+            }
+
+            .right-side {
+                width: 90%;
+                align-items: center; /* Centers buttons on mobile */
+            }
+
+            .button {
+                width: 100%;  /* Full width buttons on smaller screens */
+                margin-left: 0; /* Centers buttons */
+                font-size: 14px; /* Smaller font size */
+                padding: 12px;  /* Slightly smaller padding */
+            }
+
+            .header h1 {
+                font-size: 25px; /* Even smaller header on small screens */
             }
         }
 
